@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="html/toggler.css">
+    <script src="html/toggler.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                        Formación</a>
+                        <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+                            <ul>
+                                <li><a href="#">Angular 7 + Animations &ndash; <small>18 Ene 2019</small></a></li>
+                                <li><a href="#">Angular 7 Avanzado &ndash; <small>Próximamente</small></a></li>
+                                <li><a href="#">Dockers + kubernetes &ndash; <small>Próximamente</small></a></li>
+                                <li><a href="#">NodeJs &ndash; <small>Próximamente</small></a></li>
+                                <li><a href="#">CSS + Sass Avanzado &ndash; <small>Próximamente</small></a></li>
+                                <li><a href="#">VueJS 2 &ndash; <small>Próximamente</small></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <form action="">
+            <div class="search">
+                <label for="searchAutocomplete">Buscar en Campus</label>
+                <!-- El validador w3c me hace poner un role y he escogido searchbox. Tambien me pone como error que el input no puede tener aria-expanded pero si lo quito el js deja de funcionar. -->
+                <input type="text" role="searchbox" id="searchAutocomplete" class="search__input" aria-haspopup="true" aria-expanded="false" autocomplete="off">
+                <div class="dropdown__menu" aria-labelledby="searchAutocomplete">
+                    <a href="#">Angular 7</a>
+                    <a href="#">Angular 7 + Animations</a>
+                    <a href="#">Angular 7 Avanzado</a>
+                    <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                    <a href="#">Otros cursos de formación</a>
+                    <a href="#">Bootcamp</a>
+                </div>
+                                <button type="submit">Buscar</button>
+            </div>
+            
+        </form>
+    </header><!-- //Header-->
+
+    <!-- Main -->
+    <main>
+        <!-- Intro -->
+        <section class="intro">
+            <div class="intro-inner">
+                <h1>¡Hola a Todos!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae
+                    fugiat eligendi <strong>quidem in iure tempora</strong>! Consectetur ex, autem amet maxime odit.
+                    Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#">Más información</a>
+            </div>
+        </section><!--//Intro-->
+
+        <!-- Training -->
+        <div class="container training">
+            <article class="col">
+                <h2><a href="#">Angular 7 + Animations</a></h2>
+                <img src="images/curso.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae
+                    fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
+                    tenetur
+                    reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+            </article>
+
+            <article class="col">
+                <h2><a href="#">Docker + Kubernetes</a></h2>
+                <img src="images/curso.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae
+                    fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
+                    tenetur
+                    reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+            </article>
+
+            <article class="col">
+                <h2><a href="#">NodeJS</a></h2>
+                <img src="images/curso.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae
+                    fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
+                    tenetur
+                    reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+                </article>
+        </div><!-- //Training-->
+
+        <!-- Spot-->
+        <article class="spot">
+            <div class="container">
+                <div class="col">
+                    <video controls preload="metadata" width="501" height="358">
+                        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+                        Video not supported.
+                    </video>
+                </div>
+
+                <div class="col">
+                    <h2>Próximas convocatorias</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                        molestiae.</p>
+                    <form action="">
+                        <label for="email">Indica tu correo electrónico</label>
+                        <input type="email" id="email" placeholder="Introduce un email válido">
+                        <button type="submit">Me apunto!</button>
+                    </form>
+                </div>
+            </div>
+        </article><!-- //Spot-->
+
+        <!-- Service -->
+        <article class="service">
+            <h2>Servicios de apoyo profesional</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+                fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+                reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
+                aspernatur, natus quidem voluptas.</p>
+            <a href="#">Lorem ipsum</a>
+        </article><!-- //Servicios-->
+
+    </main><!-- //Main-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="col">
+                <ul class="links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sercicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Formación</a></li>
+                    <li><a href="#">Referencia</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <p class="copy">&copy; Company 2018</p>
+            </div>
+        </div>
+    </footer><!-- //Footer-->
+
+</body>
+</html>

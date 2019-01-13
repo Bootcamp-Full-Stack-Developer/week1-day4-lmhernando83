@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Nav -->
+    <nav>
+      <div class="logo">
+        <img src="http://placehold.jp/25x30.png" alt=""> <button>&leftarrow;</button>
+      </div>
+      <div class="menu-music">
+        <p role="heading" id="music">Music</p>
+        <div aria-labelledby="music">
+          <ul>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Rising</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">My stars</a></li>
+
+            <li><a href="#">Songs</a></li>
+            <li><a href="#">Artist</a></li>
+            <li><a href="#">Albums</a></li>
+            <li><a href="#">Radio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-playlist">
+          <p role="heading" id="playlist">Playlist <button>+</button></p>
+          <div aria-labelledby="playlist">
+            <ul>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Rising</a></li>
+              <li><a href="#">Inspiration</a></li>
+              <li><a href="#">My stars</a></li>
+
+              <li><a href="#">Songs</a></li>
+              <li><a href="#">Artist</a></li>
+              <li><a href="#">Albums</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+          </div>
+        </div>
+
+    </nav><!-- //Nav-->
+    <!-- Main -->
+    <main>
+      <div class="header">
+        <div class="col">
+          <span>&#128269;</span>
+          <label for="search"></label>
+          <input type="search" id="search" placeholder="Type here to search" autocomplete="off">
+        </div>
+        <div class="col">
+          <span class="user">Andrew Z</span>
+          <img src="images-player/placeimg_34_34_people.jpg" alt="">
+          <span>&bigodot;</span>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="col">
+          <button>&star; Save to My stars</button>
+          <h1>{{Artist Name}}</h1>
+          <ul>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Related artists</a></li>
+          </ul>
+          <div class="container albums">
+            <article class="col">
+              <img src="images-player/album1.jpg" alt="">
+              <h2>{{Album Name}}</h2>
+              <p>{{Album Year}}</p>
+            </article>
+            <article class="col">
+              <img src="images-player/album1.jpg" alt="">
+              <h2>{{Album Name}}</h2>
+              <p>{{Album Year}}</p>
+            </article>
+            <article class="col">
+              <img src="images-player/album1.jpg" alt="">
+              <h2>{{Album Name}}</h2>
+              <p>{{Album Year}}</p>
+            </article>
+            <article class="col">
+              <img src="images-player/album1.jpg" alt="">
+              <h2>{{Album Name}}</h2>
+              <p>{{Album Year}}</p>
+            </article>
+            <article class="col">
+              <img src="images-player/album1.jpg" alt="">
+              <h2>{{Album Name}}</h2>
+              <p>{{Album Year}}</p>
+            </article>
+            <article class="col">
+              <img src="images-player/album1.jpg" alt="">
+              <h2>{{Album Name}}</h2>
+              <p>{{Album Year}}</p>
+            </article>
+          </div>
+        </div>
+        <div class="col">
+          <p role="heading" id="random-selection">Random Selection</p>
+          <div class="playlist" aria-labelledby="random-selection">
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+            <div class="track">
+              <button>Awake <small>Awake</small><span> 3:53</span></button>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player">
+        <div class="col player-img">
+          <img src="images-player/placeimg_40_40_people.jpg" alt=""> 
+          <p>Rhinestone Eyes</p>
+          <p>Gorillaz</p>
+        </div>
+        <div class="col player-control">
+          <audio controls>
+            <source src="https://i.koya.io/Kero%20Kero%20Bonito%20-%20Let's%20Go%20To%20The%20Forest.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </main><!-- //Main -->
+  </div>
+</body>
+</html>
