@@ -2,7 +2,7 @@ function init() {
 
   // Dropdown
   // --------------------------------------------------------
-  var dropdown = document.querySelector('.dropdown__btn');
+ var dropdown = document.querySelector('.dropdown__btn');
 
   dropdown.onclick = function(event) {
     var dropdown = this;
