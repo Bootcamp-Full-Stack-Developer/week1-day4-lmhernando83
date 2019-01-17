@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="html/toggler.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="html/toggler.js"></script>
 </head>
 
@@ -63,13 +63,11 @@
     <main>
         <!-- Intro -->
         <section class="intro">
-            <div class="intro__inner">
+            <div class="container">
                 <h1 class="intro__heading">¡Hola a Todos!</h1>
-                <p class="intro__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                    molestiae
-                    fugiat eligendi <strong>quidem in iure tempora</strong>! Consectetur ex, autem amet maxime odit.
-                    Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="intro__link">Más información</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae fugiat eligendi <strong>quidem in iure tempora</strong>! Consectetur ex, autem amet maxime odit. Adipisci quod,tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="intro__btn">Más información</a>
             </div>
         </section>
         <!--//Intro-->
@@ -80,31 +78,19 @@
                 <article class="col">
                     <h2 class="training__heading"><a href="#">Angular 7 + Animations</a></h2>
                     <img src="images/curso.png" alt="" class="training__image">
-                    <p class="training__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                        molestiae
-                        fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
-                        tenetur
-                        reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
                 </article>
     
                 <article class="col">
                     <h2 class="training__heading"><a href="#">Docker + Kubernetes</a></h2>
                     <img src="images/curso.png" alt="" class="training__image">
-                    <p class="training__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                        molestiae
-                        fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
-                        tenetur
-                        reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
                 </article>
     
                 <article class="col">
                     <h2 class="training__heading"><a href="#">NodeJS</a></h2>
                     <img src="images/curso.png" alt="" class="training__image">
-                    <p class="training__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                        molestiae
-                        fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
-                        tenetur
-                        reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
                 </article>
             </div>
         </div><!-- //Training-->
@@ -114,7 +100,7 @@
             <div class="container"><!-- Container comodin por zeplin con max width de 1280px -->
                 <div class="col"><!-- Col division del container -->
                     <!-- Bem Bloque__Elemento de spot -->
-                    <video controls preload="metadata" width="501" height="358" class="spot__video">
+                    <video controls preload="metadata" width="501" height="286" class="spot__video">
                         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
                         Video not supported.
                     </video>
@@ -133,7 +119,7 @@
                         <!-- Bem Bloque__Elemento de spot-->
                         <input type="email" class="spot__input" id="email" placeholder="Introduce un email válido">
                         <!-- Bem Bloque__Elemento de spot-->
-                        <button type="submit" class="spot__button">Me apunto!</button>
+                        <button type="submit" class="spot__btn--submit">Me apunto!</button>
                     </form>
                 </div>
             </div>
@@ -141,21 +127,20 @@
 
         <!-- Service -->
         <article class="service">
-            <h2 class="service__heading">Servicios de apoyo profesional</h2>
-            <p class="service__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
-                fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
-                reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
-                aspernatur, natus quidem voluptas.</p>
-            <a href="#" class="service__link">Lorem ipsum</a>
+            <div class="container">
+                <h2 class="service__heading">Servicios de apoyo profesional</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse aspernatur, natus quidem voluptas.</p>
+                <a href="#" class="service__btn">Lorem ipsum</a>
+            </div>
         </article><!-- //Servicios-->
 
     </main><!-- //Main-->
 
     <!-- Footer -->
-    <footer>
+    <footer class="site-footer"><!--si no llevase class la ul le podriamos llamar list__links-->
         <div class="container">
             <div class="col">
-                <ul class="footer__links">
+                <ul class="site-footer__links"><!-- list__links -->
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sercicios</a></li>
                     <li><a href="#">Nosotros</a></li>
@@ -166,7 +151,7 @@
             </div>
 
             <div class="col">
-                <p class="footer__copy">&copy; Company 2018</p>
+                <p>&copy; Company 2018</p>
             </div>
         </div>
     </footer><!-- //Footer-->
