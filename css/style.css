@@ -2,30 +2,37 @@
 @import "../html/toggler.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* Globals */
+/*------------------------------------
+              Globals 
+ ------------------------------------*/
 body{
   font-family: Helvetica, sans-serif;
   font-size: 16px;
 }
-p {
+/*p {
   margin: 15px 0;
   line-height: 27px;
-}
+}*/
 .container{
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 /* // Globals */
 
-/* Header */
+/*------------------------------------
+              Header 
+ ------------------------------------*/
 body > header{
   background-color: #4a4a4a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  height: 3.4rem;
+  height: 3.5rem;
   padding: 1rem;
+}
+.navbar__list {
+  margin-left: 1.75rem;
 }
 .navbar__list li{
   display: inline-block;
@@ -33,7 +40,10 @@ body > header{
 .navbar__list a{
   color: #ffffff;
   text-decoration: none;
-  margin: 0 1rem;
+  margin-right: 2.375rem;
+}
+.dropdown__btn::after {
+  content: "▼";
 }
 .dropdown__menu {
   min-width: 18rem;
@@ -50,13 +60,14 @@ body > header{
 }
 .search__label {
   color: #cccccc;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .search__input{
   height: 2.3rem;
   border-radius: 0.25rem;
-  width: 203px;
+  width: 12.688rem;
   border: none;
+  margin-right: .5rem;
 }
 .search__menu {
   right: 82px;
@@ -71,30 +82,35 @@ body > header{
   height: 2.3rem;
   font-weight: 500;
   border-radius: 0.25rem;
-  width: 79px;
   font-size: 16px;
+  padding: 0.625rem;
 }
 /* // Header */
 
-/* Intro */
+/*------------------------------------
+             Intro
+ ------------------------------------*/
 .intro {
   background-color: #efefef;
-  padding: 5rem;
+  padding: 3.813rem 5.938rem 4.063rem;
 }
 .intro__heading {
-  font-size: 3.8rem;
+  font-size: 3.875rem;
   color: #4a4a4a;
 }
-.intro p{
-  max-width: 833px;
+.intro p {
+  max-width: 52.063rem;
   color: #333333;
+  margin: 1.188rem 0 0.75rem 0;
+  line-height: 1.688rem;
+  font-size: 1.125rem;
 }
 .intro strong {
   font-weight: bold;
 }
 .intro__btn {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   background-color: #7ed321;
   padding: 1rem;
   display: inline-block;
@@ -103,42 +119,44 @@ body > header{
 }
 /* //Intro*/
 
-/* Training */
+/*------------------------------------
+            Training 
+ ------------------------------------*/
 .training{
-  padding: 4rem;
-}
-.training .container{
+  padding: 4rem 5.875rem 4.313rem;
   display: flex;
 }
 .training .col{
-  margin: 0 30px;
+  margin: 0 2rem;
+  clear: both;
 }
 .training p {
-  margin: 0;
+  line-height: 1.688rem;
 }
 .training__image {
   float: left;
-  padding-right: 10px;
+  clear: both;
+  padding-right: 0.625rem;
 }
 .training__heading a {
   color: #4a90e2;
   text-decoration: none;
   font-size: 1.6rem;
   display: inline-block;
-  margin: 15px 0;
+  margin-bottom: 1.25rem;
 }
 /* //Training */
 
-/* Spot */
-.spot {
+/*------------------------------------
+              SPOT 
+ ------------------------------------*/
+ .spot {
   background-color: #e8f6fc;
-}
-.spot .container {
+  padding: 6.313rem 19.25rem 6.125rem;
   display: flex;
-  padding: 5rem;
 }
 .spot .col {
-  margin: 0 30px;
+  margin: 0 2rem;
 }
 .spot__heading {
   font-size: 26px;
@@ -178,17 +196,23 @@ body > header{
 }
 /* //Spot */
 
-/* Service */
-.service {
-  padding: 5rem;
+/*------------------------------------
+              Service
+ ------------------------------------*/
+ .service {
+  padding-top: 5.188rem;
   text-align: center;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-bottom: 7.313rem;
 }
 .service__heading {
-  font-size: 40px;
+  font-size: 2.125rem;
+  margin-bottom: 1.75rem;
 }
 .service p {
-  max-width: 1040px;
-  margin: 25px auto;
+  line-height: 1.688rem;
+  margin-bottom: 0.813rem;
 }
 .service__btn {
   display: inline-block;
@@ -201,12 +225,18 @@ body > header{
 }
 /* //Service */
 
-/* Footer */
-.site-footer .container {
+/*------------------------------------
+              footer 
+ ------------------------------------*/
+.site-footer {
+  
+}
+.site-footer .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #e5e5e5;
+  padding: 0.938rem 0.313rem 6rem;
 }
 .site-footer__links li {
   display: inline;
