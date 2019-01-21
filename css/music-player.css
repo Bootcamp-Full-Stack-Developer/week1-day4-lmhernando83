@@ -1,0 +1,88 @@
+@import "reset.css";
+
+.wrapper{
+  display: flex;
+}
+
+nav{
+  /*background: black;*/
+  height: 100vh;
+  width: 20%;
+  color: white;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  max-width: 220px;
+}
+
+.logo {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu-playlist p {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+main{
+  /*background: pink;*/
+  width: 100vw;
+}
+
+.main-container {
+display: flex;
+}
+
+.container.albums article.col {
+width: 32%;
+display: inline-block;
+}
+
+.main-container .col {
+width: 50%;
+}
+
+.playlist button {
+display: block;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.header .col {
+display: flex;
+align-items: center;
+}
+
+.header img{
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.player{
+  /*background: blue;*/
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.player .col {
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 20%;
+max-width: 228px;
+box-sizing: border-box;
+background: red;
+}*/
