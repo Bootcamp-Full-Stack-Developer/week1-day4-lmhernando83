@@ -1,0 +1,149 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.player {
+  width: calc(100% - 13.75rem);
+}
+
+.player__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5625rem 1.875rem 0.875rem;
+}
+
+.player__main {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5625rem 1.875rem;
+}
+
+.player__main .col {
+  flex-grow: 1;
+  flex-basis: 70%;
+}
+
+.player__main .col + .col {
+  flex-basis: 30%;
+}
+
+.playerContent__title {
+  font-size: 5.625rem;
+  padding: 0.9375rem 0;
+}
+
+.playerContent__menu {
+  display: flex;
+  padding: 0.9375rem 0;
+}
+
+.playerContent__menu li +li {
+  margin-left: 1.5625rem;
+  margin-bottom: 0.3125rem;
+}
+
+.listAlbums {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.album {
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+  flex-basis: 30%;
+}
+
+.player__reproductor {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8125rem;
+}
+
+.menu {
+  width: 13.75rem;
+}
+
+/*nav{
+  height: 100vh;
+  width: 20%;
+  color: white;
+  padding: 24px;
+  max-width: 13.75rem;
+}
+
+.logo {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu-playlist p {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+main{
+  width: 100vw;
+}
+
+.main-container {
+display: flex;
+}
+
+.container.albums article.col {
+width: 32%;
+display: inline-block;
+}
+
+.main-container .col {
+width: 50%;
+}
+
+.playlist button {
+display: block;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.header .col {
+display: flex;
+align-items: center;
+}
+
+.header img{
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.player{
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}*/
